@@ -1,0 +1,233 @@
+@charset "utf-8";
+.fn_cs_cats_list ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30px;
+}
+
+.fn_cs_cats_list li {
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.fn_cs_cats_list .img_holder {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: var(--mow-box-shadow);
+    margin-bottom: 22px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fn_cs_cats_list .img_holder a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fn_cs_cats_list .img_holder[data-bg-img=""] {
+    background-color: #91a29b;
+}
+
+.fn_cs_cats_list .name {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--hff);
+    color: var(--mow-hc);
+    margin-bottom: 2px;
+}
+
+.fn_cs_cats_list .count {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: var(--bff);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--mow-bc);
+    margin-bottom: -7px;
+}
+
+.fn_cs_cats_list .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+}
+
+/* Searchbox */
+
+.fn_cs_searchbox {
+    position: relative;
+    overflow: hidden;
+}
+
+.fn_cs_searchbox .searchform {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.fn_cs_searchbox .searchbox {
+    background-color: #000;
+    padding: 110px 0 120px;
+}
+
+.fn_cs_searchbox .main_form {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.fn_cs_searchbox .input {
+    flex: auto;
+}
+
+.fn_cs_searchbox .input input {
+    width: 100%;
+    display: block;
+    height: 60px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 24px;
+    font-family: var(--bff);
+    font-weight: 400;
+    color: #fff;
+}
+
+.fn_cs_searchbox .input input:focus {
+    background-color: transparent;
+}
+
+.fn_cs_searchbox .search {
+    display: flex;
+    align-items: center;
+}
+
+.fn_cs_searchbox .search input {
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 48px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--hff);
+    color: #080808;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    display: block;
+}
+
+.fn_cs_searchbox .search input:hover {
+    background-color: var(--mow-mc1);
+    color: #fff;
+}
+
+.fn_cs_searchbox .label {
+    display: block;
+    text-align: center;
+    font-family: var(--hff);
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.fn_cs_searchbox .popular_cats {
+    padding-top: 35px;
+}
+
+.fn_cs_searchbox .cats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -10px;
+}
+
+.fn_cs_searchbox .cats a {
+    text-decoration: none;
+    margin: 10px 0 0 10px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 28px;
+    font-family: var(--hff);
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 19px;
+}
+
+.fn_cs_searchbox .cats a:hover {
+    color: var(--mow-mc1);
+    border-color: var(--mow-mc1);
+}
+
+.fn_cs_searchbox .top_titles {
+    margin-bottom: -24px;
+}
+
+.fn_cs_searchbox .item {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1;
+    font-family: var(--hff);
+    color: #000;
+    position: relative;
+    padding-right: 150px;
+}
+
+.fn_cs_searchbox .item_sep {
+    width: 50px;
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    margin-top: -9px;
+    height: 4px;
+    background-color: #000;
+}
+
+.fn_cs_searchbox .item_sep:before,
+.fn_cs_searchbox .item_sep:after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 28px;
+    transform: skew(-25deg);
+    background-color: #000;
+    transform-origin: bottom;
+    left: 11px;
+    top: -12px;
+}
+
+.fn_cs_searchbox .item_sep:before {
+    left: 23px;
+}
