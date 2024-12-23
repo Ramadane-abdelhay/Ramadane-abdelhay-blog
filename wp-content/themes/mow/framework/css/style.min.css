@@ -248,6 +248,7 @@ input[type="week"]:focus {
 .fn__logo img {
     max-width: 220px;
     max-height: 80px
+    scale: 1.2;
 }
 
 .fn__logo a {
