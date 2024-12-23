@@ -1,0 +1,2583 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mow &#8211; Blog &amp; Magazine WordPress Theme</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <style>
+        img:is([sizes="auto" i], [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+    </style>
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link rel="alternate" type="application/rss+xml" title="Mow &raquo; Feed" href="feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Mow &raquo; Comments Feed" href="comments/feed/" />
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/mow\/news\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"
+            }
+        };
+        /*! This file is auto-generated */
+        ! function(i, n) {
+            var o, s, e;
+
+            function c(e) {
+                try {
+                    var t = {
+                        supportTests: e,
+                        timestamp: (new Date).valueOf()
+                    };
+                    sessionStorage.setItem(o, JSON.stringify(t))
+                } catch (e) {}
+            }
+
+            function p(e, t, n) {
+                e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+                var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+                    r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+                return t.every(function(e, t) {
+                    return e === r[t]
+                })
+            }
+
+            function u(e, t, n) {
+                switch (t) {
+                    case "flag":
+                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+                    case "emoji":
+                        return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
+                }
+                return !1
+            }
+
+            function f(e, t, n) {
+                var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"),
+                    a = r.getContext("2d", {
+                        willReadFrequently: !0
+                    }),
+                    o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
+                return e.forEach(function(e) {
+                    o[e] = t(a, e, n)
+                }), o
+            }
+
+            function t(e) {
+                var t = i.createElement("script");
+                t.src = e, t.defer = !0, i.head.appendChild(t)
+            }
+            "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
+                everything: !0,
+                everythingExceptFlag: !0
+            }, e = new Promise(function(e) {
+                i.addEventListener("DOMContentLoaded", e, {
+                    once: !0
+                })
+            }), new Promise(function(t) {
+                var n = function() {
+                    try {
+                        var e = JSON.parse(sessionStorage.getItem(o));
+                        if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+                    } catch (e) {}
+                    return null
+                }();
+                if (!n) {
+                    if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+                        var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));",
+                            r = new Blob([e], {
+                                type: "text/javascript"
+                            }),
+                            a = new Worker(URL.createObjectURL(r), {
+                                name: "wpTestEmojiSupports"
+                            });
+                        return void(a.onmessage = function(e) {
+                            c(n = e.data), a.terminate(), t(n)
+                        })
+                    } catch (e) {}
+                    c(n = f(s, u, p))
+                }
+                t(n)
+            }).then(function(e) {
+                for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
+                n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function() {
+                    n.DOMReady = !0
+                }
+            }).then(function() {
+                return e
+            }).then(function() {
+                var e;
+                n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+            }))
+        }((window, document), window._wpemojiSettings);
+        /* ]]> */
+    </script>
+    <style id='wp-emoji-styles-inline-css' type='text/css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <style id='classic-theme-styles-inline-css' type='text/css'>
+        /*! This file is auto-generated */
+
+        .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
+
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }
+    </style>
+    <style id='global-styles-inline-css' type='text/css'>
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--font-family--inter: "Inter", sans-serif;
+            --wp--preset--font-family--cardo: Cardo;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=9.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=9.4.2' type='text/css' media='only screen and (max-width: 768px)'
+    />
+    <link rel='stylesheet' id='woocommerce-general-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=9.4.2' type='text/css' media='all' />
+    <style id='woocommerce-inline-inline-css' type='text/css'>
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel='stylesheet' id='mow_fn_googlefonts-css' href='https://fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CHeebo%3A400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CHeebo%3A400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CWork+Sans%3A400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin%2Ccyrillic%2Cgreek%2Cvietnamese&#038;ver=6.7.1'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css' href='wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.25.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='swiper-css' href='wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' type='text/css' media='all' />
+    <link rel='stylesheet' id='e-swiper-css' href='wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-327-css' href='wp-content/uploads/elementor/css/post-327.css?ver=1734264068' type='text/css' media='all' />
+    <link rel='stylesheet' id='frel_style-css' href='wp-content/plugins/mow-core/assets/css/style.css?ver=1.0.2.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-325-css' href='wp-content/uploads/elementor/css/post-325.css?ver=1734264068' type='text/css' media='all' />
+    <link rel='stylesheet' id='mow-fn-base-css' href='wp-content/themes/mow/framework/css/base.min.css?ver=v1_01.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='ytplayer-css' href='wp-content/themes/mow/framework/css/mb-ytplayer.min.css?ver=v1_01.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='lightgallery-css' href='wp-content/themes/mow/framework/css/lightgallery.min.css?ver=v1_01.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='mow-fn-fontello-css' href='wp-content/themes/mow/framework/css/fontello.min.css?ver=v1_01.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='mow-fn-widgets-css' href='wp-content/themes/mow/framework/css/widgets.min.css?ver=v1_01.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='mow-fn-woocommerce-css' href='wp-content/themes/mow/config/config-woo/woocommerce.min.css?ver=v1_01.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='mow-fn-style-css' href='wp-content/themes/mow/framework/css/style.min.css?ver=v1_01.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='mow-fn-responsive-css' href='wp-content/themes/mow/framework/css/responsive.min.css?ver=v1_01.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='mow-fn-dark-css' href='wp-content/themes/mow/framework/css/dark.min.css?ver=v1_01.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='mow-fn-stylesheet-css' href='wp-content/themes/mow/style.css?ver=v1_01.0.2' type='text/css' media='all' />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Work%20Sans:400%7CHeebo:400%7CLora:400&#038;display=swap&#038;ver=1733224152" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work%20Sans:400%7CHeebo:400%7CLora:400&#038;display=swap&#038;ver=1733224152" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work%20Sans:400%7CHeebo:400%7CLora:400&#038;display=swap&#038;ver=1733224152" /></noscript>
+    <link rel='stylesheet' id='mow_fn_inline-css' href='wp-content/themes/mow/framework/css/inline.css?ver=wp-content/themes/mow'
+        type='text/css' media='all' />
+    <style id='mow_fn_inline-inline-css' type='text/css'>
+        @media(max-width: 600px) {
+            #wpadminbar {
+                position: fixed;
+            }
+        }
+
+        :root {
+            --hff: Heebo;
+            --bff: Work Sans;
+            --quote-ff: Lora;
+        }
+
+        .cursor-inner.cursor-slider.cursor-hover span:after,
+        .cursor-inner.cursor-slider.cursor-hover span:before {
+            background-color: #000000;
+        }
+
+        .cursor-outer .fn-cursor,
+        .cursor-inner.cursor-slider:not(.cursor-hover) .fn-cursor {
+            border-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .cursor-inner .fn-cursor,
+        .cursor-inner .fn-left:before,
+        .cursor-inner .fn-left:after,
+        .cursor-inner .fn-right:before,
+        .cursor-inner .fn-right:after {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .cursor-inner.cursor-hover .fn-cursor {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        [data-site-skin='dark'] .cursor-inner.cursor-slider.cursor-hover span:after,
+        [data-site-skin='dark'] .cursor-inner.cursor-slider.cursor-hover span:before {
+            background-color: #FFFFFF;
+        }
+
+        [data-site-skin='dark'] .cursor-outer .fn-cursor,
+        [data-site-skin='dark'] .cursor-inner.cursor-slider:not(.cursor-hover) .fn-cursor {
+            border-color: rgba(255, 255, 255, 0.7);
+        }
+
+        [data-site-skin='dark'] .cursor-inner .fn-cursor,
+        [data-site-skin='dark'] .cursor-inner .fn-left:before,
+        [data-site-skin='dark'] .cursor-inner .fn-left:after,
+        [data-site-skin='dark'] .cursor-inner .fn-right:before,
+        [data-site-skin='dark'] .cursor-inner .fn-right:after {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        [data-site-skin='dark'] .cursor-inner.cursor-hover .fn-cursor {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        :root {
+            --mow-bbc: #FFFFFF;
+            --mow-mc1: #6428EC;
+            --mow-hhc: #6428EC;
+            --mow-hc: #080808;
+            --mow-bc: #777777;
+        }
+
+        .blog__item .desc p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        .mow_fn_mlogo_header[data-layout='overlay_bg'] .header_nav_wrap {
+            background-color: #080808;
+        }
+
+        .mow_fn_mlogo_header[data-layout='overlay_bg'] .mow_fn_main_nav>li>a {
+            color: #ffffff;
+        }
+
+        .fn__rating_count .number {
+            background-color: #fdd23c;
+            color: #000000;
+        }
+
+        .fn__meta .sticky_label span {
+            background-color: #FFEEAF;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        h4 {
+            font-size: 24px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+        h6 {
+            font-size: 16px;
+        }
+    </style>
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.1'
+        type='text/css' media='all' />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script type="text/javascript" src="wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script type="text/javascript" src="wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.9.4.2" id="jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
+    <script type="text/javascript" id="wc-add-to-cart-js-extra">
+        /* <![CDATA[ */
+        var wc_add_to_cart_params = {
+            "ajax_url": "\/work\/envato\/frenify\/wp\/mow\/news\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "\/work\/envato\/frenify\/wp\/mow\/news\/?wc-ajax=%%endpoint%%",
+            "i18n_view_cart": "View cart",
+            "cart_url": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/mow\/news\/cart\/",
+            "is_cart": "",
+            "cart_redirect_after_add": "no"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.4.2" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
+    <script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.9.4.2" id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+    <script type="text/javascript" id="woocommerce-js-extra">
+        /* <![CDATA[ */
+        var woocommerce_params = {
+            "ajax_url": "\/work\/envato\/frenify\/wp\/mow\/news\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "\/work\/envato\/frenify\/wp\/mow\/news\/?wc-ajax=%%endpoint%%"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.4.2" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+    <script type="text/javascript" src="wp-content/themes/mow/framework/js/head-script.min.js?ver=v1_01.0.2" id="head-script-js"></script>
+    <link rel="https://api.w.org/" href="wp-json/" />
+    <link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/325" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.7.1" />
+    <meta name="generator" content="WooCommerce 9.4.2" />
+    <link rel="canonical" href="" />
+    <link rel='shortlink' href='' />
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffrenify.com%2Fwork%2Fenvato%2Ffrenify%2Fwp%2Fmow%2Fnews%2F" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffrenify.com%2Fwork%2Fenvato%2Ffrenify%2Fwp%2Fmow%2Fnews%2F&#038;format=xml" />
+    <meta name="generator" content="Redux 4.5.0" /> <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+    <meta name="description" content="#AI#Audio#Blog#Design#Fashion#Food#Gallery#Health#Humor#Image#Innovations#Inspiration#Interior#Lifestyle#Quote#Technology#Travel#Video#WellBeing#Writing Lifestyle4 weeks agoTop Tips to Stay Motivated and Avoid Burnout While Working Remotely Play / PauseMute / UnmuteWatch Full Video on YouTubeLuxury4 weeks agoHow...">
+    <meta name="generator" content="Elementor 3.25.8; features: e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <style>
+        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+            background-image: none !important;
+        }
+
+        @media screen and (max-height: 1024px) {
+            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+            .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                background-image: none !important;
+            }
+        }
+
+        @media screen and (max-height: 640px) {
+            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+            .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+                background-image: none !important;
+            }
+        }
+    </style>
+    <style class='wp-fonts-local' type='text/css'>
+        @font-face {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 300 900;
+            font-display: fallback;
+            src: url('wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2') format('woff2');
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: Cardo;
+            font-style: normal;
+            font-weight: 400;
+            font-display: fallback;
+            src: url('wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2') format('woff2');
+        }
+    </style>
+    <link rel="icon" href="wp-content/uploads/2024/10/cropped-mow-32x32.png" sizes="32x32" />
+    <link rel="icon" href="wp-content/uploads/2024/10/cropped-mow-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="wp-content/uploads/2024/10/cropped-mow-180x180.png" />
+    <meta name="msapplication-TileImage" content="wp-content/uploads/2024/10/cropped-mow-270x270.png" />
+    <style id="mow_fn_option-dynamic-css" title="dynamic-css" class="redux-options-output">
+        body {
+            font-family: "Work Sans";
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+        }
+
+        .mow_fn_main_nav>li>a {
+            font-family: Heebo;
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        input {
+            font-family: Heebo;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+        }
+
+        blockquote {
+            font-family: Lora;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 24px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Heebo;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <script>
+        if (!localStorage.mow_skin) {
+            localStorage.mow_skin = "light";
+        }
+        document.documentElement.setAttribute("data-site-skin", localStorage.mow_skin);
+    </script>
+</head>
+
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-325 theme-mow woocommerce-no-js elementor-default elementor-kit-327 elementor-page elementor-page-325">
+
+
+
+    <!-- HTML starts here -->
+    <div class="mow-fn-wrapper core_ready">
+
+
+        <!-- Desktop Navigation -->
+
+
+
+        <div class="mow_fn_site_overlay"></div>
+
+        <!-- Header -->
+        <header id="mow_fn_header">
+
+            <div class="mow_fn_header">
+                <div class="header_in">
+                    <div class="ht_left">
+                        <div class="ht_left_item fn__logo">
+                            <a href=""><img class="dark_logo" src="wp-content/themes/mow/framework/img/logo/logo.png" alt="logo"><img class="light_logo" src="wp-content/themes/mow/framework/img/logo/light-logo.png" alt="logo"></a>                            </div>
+                        
+                    </div>
+                    <div class="ht_right">
+                        <div class="ht_right_item ht_right_item_nav">
+                            <div class="mow_fn_nav nav__ready">
+                                <div class="menu">
+                                    <div class="menu-main-menu-container">
+                                        <ul id="menu-main-menu" class="mow_fn_main_nav">
+                                            <li id="menu-item-699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-699"><a href="#"><span>Home</span></a></li>
+                                            <li id="menu-item-700" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-700"><a href="#"><span>About</span></a></li>
+                                            <li id="menu-item-701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-701"><a href="#"><span>Latest news</span></a></li>
+                                            <li id="menu-item-702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-702"><a href="#"><span>Blogs</span></a></li>
+                                            <li id="menu-item-704" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-704"><a href="#"><span>Contact</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ht_left_item fn__skin">
+                        <a href="#" class="light"><span class="text">Light</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__sun.svg" alt="svg"></a>
+                        <a href="#" class="dark"><span class="text">Dark</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__moon.svg" alt="svg"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- !Header -->
+
+
+
+
+    <div class="mow_fn_stickynav ajax_enable" data-type="always_on">
+        <div class="stickynav_in">
+            <div class="transform_hedaer">
+                <div class="sticky_header">
+                    <div class="mow_fn_nav sticky_nav">
+                        <div class="menu-main-menu-container">
+                            <ul id="menu-main-menu" class="mow_fn_main_nav">
+                                <li id="menu-item-699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-699"><a href="#"><span>Home</span></a></li>
+                                <li id="menu-item-700" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-700"><a href="#"><span>About</span></a></li>
+                                <li id="menu-item-701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-701"><a href="#"><span>Latest news</span></a></li>
+                                <li id="menu-item-702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-702"><a href="#"><span>Blogs</span></a></li>
+                                <li id="menu-item-704" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-704"><a href="#"><span>Contact</span></a></li>
+                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- !Desktop Navigation -->
+
+    <!-- Mobile Navigation -->
+
+    <!-- Mobile Navigation -->
+    <div class="mow_fn_mobnav">
+        <div class="mob_top">
+            <div class="logo">
+                <div class="fn__logo"><a href=""><img src="wp-content/themes/mow/framework/img/logo/mobile-logo.png" width="161" height="54" alt="logo"></a></div>
+            </div>
+            <div class="right__trigger">
+                <a href="#" class="mobsearch_opener"><img class="fn__svg " src="wp-content/themes/mow/framework/svg/search.svg" alt="svg"></a>
+                <a class="mobmenu_opener" href="#"><span></span></a>
+            </div>
+        </div>
+
+        <div class="mob_bot">
+            <div class="mob_site_skin">
+                <div class="fn__skin">
+                    <a href="#" class="light"><span class="text">Light</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__sun.svg" alt="svg"></a>
+                    <a href="#" class="dark"><span class="text">Dark</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__moon.svg" alt="svg"></a>
+                </div>
+            </div>
+            <div class="menu-main-menu-container">
+                <ul id="menu-main-menu-1" class="mobile_menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-325 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-392"><a href="">Home &#038; Demos<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-699"><a href="https://frenify.com/work/envato/frenify/wp/mow/auto">Auto<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-700"><a href="https://frenify.com/work/envato/frenify/wp/mow/entertainment">Entertaintment<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-701"><a href="https://frenify.com/work/envato/frenify/wp/mow/food">Food<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-702"><a href="https://frenify.com/work/envato/frenify/wp/mow/gadgets">Gadgets<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-705"><a href="https://frenify.com/work/envato/frenify/wp/mow/news">News<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-704"><a href="https://frenify.com/work/envato/frenify/wp/mow/photography">Photography<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-827"><a href="https://frenify.com/work/envato/frenify/wp/mow/review">Review<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-703"><a href="https://frenify.com/work/envato/frenify/wp/mow/sport">Sport<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-698"><a href="https://frenify.com/work/envato/frenify/wp/mow/travel">Travel<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-649"><a href="#">Features<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-650"><a href="#">Post Headers<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651"><a href="what-marriage-means-to-me/">Standart<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-652"><a href="the-data-informed-manifesto/">Featured<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-653"><a href="every-day-is-a-trip/">Spotlight Headline<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-654"><a href="your-table-sugar-may-not-be-vegan/">Overlay Title<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-655"><a href="becoming-the-glue-of-a-family/">Large Image<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-657"><a href="health-care-roulette/">Overlay Content<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-755"><a href="#">Post Layout<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-761"><a href="in-praise-of-quiet-resistance/">No Sidebar<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-754"><a href="men-women-are-bilogical-opposites/">Left Sidebar<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-762"><a href="the-run-down-dream-house/">Right Sidebar<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-803"><a href="#">Post Formats<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-804"><a href="a-love-letter-to-los-angeles/">Video &#8211; Youtube<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-805"><a href="working-from-home-tanked-my-productivity/">Video &#8211; Local<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-806"><a href="the-absolutely-ridiculous-history/">Gallery<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-807"><a href="leaving-san-francisco/">Standart<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-287"><a href="https://fn_ex_link/?frenify_ads">Home Ads<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-809"><a href="contact-page/">Contact<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-808"><a href="coming-soon/">Coming Soon<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-810"><a href="protected-page/">Protected Page<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-811"><a href="404">404<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-279"><a href="category/travel/">Travel<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-684"><a href="#">Top Posts<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-697"><a href="category/food/">Food<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-685"><a href="leaving-san-francisco/">Top Destinations<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-690"><a href="the-absolutely-ridiculous-history/">Immune System<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-694"><a href="category/lifestyle/">Lifestyle<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-687"><a href="a-love-letter-to-los-angeles/">Renewable Energy<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-688"><a href="its-not-just-the-passing-of-a-queen/">Longer Life<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-695"><a href="category/interior/">Interior<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-686"><a href="what-marriage-means-to-me/">Stay Motivated<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-691"><a href="famous-works-of-literature/">Global Markets<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-696"><a href="category/health/">Health<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-689"><a href="do-you-need-to-change-yourself/">Extend Battery Life<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-692"><a href="a-search-tool-for-serendipity/">Mental Health<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-465"><a href="shop/">Shop<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-469"><a href="shop/">Shop<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-468"><a href="cart/">Cart<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-467"><a href="checkout/">Checkout<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-466"><a href="my-account/">My account<span class="suffix">//</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- !Mobile Navigation -->
+    <!-- !Mobile Navigation -->
+
+
+
+
+    <div class="mow_fn_content">
+        <div class="mow_fn_index" data-secondary-sidebar="wsl" data-main-sidebar="wsr" data-page="home">
+
+
+            <div class="mow_fn_blog_content">
+                <div class="no_container">
+                    <div class="mow_fn_blog_in">
+                        <div data-elementor-type="wp-page" data-elementor-id="325" class="elementor elementor-325">
+                            <div class="elementor-element elementor-element-c35eb59 e-con-full e-flex e-con e-parent" data-id="c35eb59" data-element_type="container">
+                                <div class="elementor-element elementor-element-acf47ef elementor-widget elementor-widget-frel-categories" data-id="acf47ef" data-element_type="widget" data-widget_type="frel-categories.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn_cs_cats_carousel" data-bg="gray">
+                                            <div class="container">
+                                                <div class="cats_carousel">
+                                                    <div class="swiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/ai/">#AI</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/audio/">#Audio</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/blog/">#Blog</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/design/">#Design</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/fashion/">#Fashion</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/food/">#Food</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/gallery/">#Gallery</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/health/">#Health</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/humor/">#Humor</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/image/">#Image</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/innovations/">#Innovations</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/inspiration/">#Inspiration</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/interior/">#Interior</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/lifestyle/">#Lifestyle</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/quote/">#Quote</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/technology/">#Technology</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/travel/">#Travel</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/video/">#Video</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/wellbeing/">#WellBeing</a></div>
+                                                            </div>
+                                                            <div class="swiper-slide" style="width: auto;">
+                                                                <div class="item"><a href="tag/writing/">#Writing</a></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="slider_nav">
+                                                            <div class="swiper-button-prev"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></div>
+                                                            <div class="swiper-button-next"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-d0a8dc4 elementor-widget elementor-widget-frel-divider" data-id="d0a8dc4" data-element_type="widget" data-widget_type="frel-divider.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn_cs_divider">
+                                            <div class="container">
+                                                <div class="fn_cs_divider_in"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-b3225d6 e-con-full container e-flex e-con e-parent" data-id="b3225d6" data-element_type="container">
+                                <div class="elementor-element elementor-element-511d086 e-con-full e-flex e-con e-child" data-id="511d086" data-element_type="container">
+                                    <div class="elementor-element elementor-element-adfea47 elementor-widget elementor-widget-frel-posts" data-id="adfea47" data-element_type="widget" data-widget_type="frel-posts.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                                <div class="fn__widget_posts_delta_wrapper">
+                                                    <div class="fn__widget_posts_delta" data-layout="row" data-color="" data-title-size="m">
+                                                        <div class="fn__widget_filter_content">
+                                                            <ul class="first_item delta_items active">
+                                                                <li class="delta_item">
+                                                                    <div class="delta__item">
+                                                                        <div class="img_holder">
+                                                                            <div class="item_img"><a href="what-marriage-means-to-me/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/ai-generated-8945669_1920-1024x574.jpg" alt=""></a></div>
+                                                                        </div>
+                                                                        <div class="title_holder">
+                                                                            <div class="fn__meta">
+                                                                                <p><a class=" fn_last_category" href=" category/lifestyle/">Lifestyle</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                        title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <h3 class="post_title"><a href="what-marriage-means-to-me/">Top Tips to Stay Motivated and Avoid Burnout While Working Remotely</a></h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-1cc0a53 elementor-widget elementor-widget-frel-posts" data-id="1cc0a53" data-element_type="widget" data-widget_type="frel-posts.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                                <div class="fn__widget_posts_delta_wrapper">
+                                                    <div class="fn__widget_posts_delta" data-layout="row" data-color="" data-title-size="m">
+                                                        <div class="fn__widget_filter_content">
+                                                            <ul class="first_item delta_items active">
+                                                                <li class="delta_item">
+                                                                    <div class="delta__item">
+                                                                        <div class="fn__video_post " data-video="youtube" data-ratio="1.5">
+                                                                            <div class="blog__image"><a class="fn__full_link" href="a-love-letter-to-los-angeles/"></a>
+                                                                                <div class="fn__video_icons"><button class="fn__video_btn_play"><span class="t_text">Play / Pause</span><span class="play"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__play.svg" alt="svg"></span><span class="pause"></span></button>
+                                                                                    <button
+                                                                                        class="fn__video_btn_volume"><span class="t_text">Mute / Unmute</span><span class="mute"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__mute.svg" alt="svg"></span>
+                                                                                        <span
+                                                                                            class="unmute"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__unmute.svg" alt="svg"></span>
+                                                                                            </button><a class="fn__video_btn_youtube" href="https://www.youtube.com/watch?v=junJU-qj92k" target="_blank"><span class="t_text">Watch Full Video on YouTube</span><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__youtube.svg" alt="svg"></a></div>
+                                                                                <div
+                                                                                    class="fn__video_youtube" data-property="{videoURL:'https://www.youtube.com/watch?v=junJU-qj92k', containment:'self', autoPlay:true, loop:true, mute:true, showControls:false, stopMovieOnBlur:false, startAt:0, stopAt:5, opacity:1, showYTLogo: false, anchor: 'center,center'}"></div><img decoding="async" loading="lazy" class="yt_fallback_img" src="wp-content/uploads/2024/10/video-thumb.jpg" alt="Fallback Image"></div>
+                                                                    </div>
+                                                                    <div class="title_holder">
+                                                                        <div class="fn__meta">
+                                                                            <p><a class=" fn_last_category" href=" category/travel/luxury-escapes/">Luxury</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                    title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <h3 class="post_title"><a href="a-love-letter-to-los-angeles/">How to Pose People Who Are Not Models for Natural and Authentic Portraits</a></h3>
+                                                                    </div>
+                                                        </div>
+                                                        </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-7618c4a elementor-widget elementor-widget-frel-ad" data-id="7618c4a" data-element_type="widget" data-widget_type="frel-ad.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn_cs_ad">
+                                            <div class="fn_cs_ad_in" data-bg="yes">
+                                                <h3 class="ad_title">Advertisement</h3>
+                                                <div class="ad_content"><a href="https://frenify.com/" rel="nofollow" target="_blank"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/11/300ads-600.jpg" alt=""></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-8d92a2d e-con-full e-flex e-con e-child" data-id="8d92a2d" data-element_type="container">
+                                <div class="elementor-element elementor-element-dc92b32 elementor-widget elementor-widget-frel-posts" data-id="dc92b32" data-element_type="widget" data-widget_type="frel-posts.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                            <div class="fn__widget_posts_epsilon" data-title-size="l">
+                                                <div class="fn__widget_filter_content">
+                                                    <div class="first_item epsilon_items active">
+                                                        <div class="fn__circle_slider">
+                                                            <div class="fn-block-progress-circle"><svg class="progress-svg" viewBox="0 0 30 30"><circle class="progress-bar" r="13" cx="15" cy="15"></circle></svg></div>
+                                                            <div class="swiper">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+                                                                        <div class="epsilon_item">
+                                                                            <div class="epsilon__item">
+                                                                                <div class="img_holder">
+                                                                                    <div class="item_img"><a href="its-not-just-the-passing-of-a-queen/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/3432464.jpg" alt=""></a></div>
+                                                                                </div>
+                                                                                <div class="title_holder">
+                                                                                    <div class="fn__meta">
+                                                                                        <p><a class=" fn_last_category" href=" category/travel/">Travel</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                                title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <h3 class="post_title"><a href="its-not-just-the-passing-of-a-queen/">New Study Reveals Simple Lifestyle Changes Linked to Longer Life</a></h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <div class="epsilon_item">
+                                                                            <div class="epsilon__item">
+                                                                                <div class="img_holder">
+                                                                                    <div class="item_img"><a href="do-you-need-to-change-yourself/"><img decoding="async" loading="lazy" src="wp-content/uploads/2023/01/544575.jpg" alt=""></a></div>
+                                                                                </div>
+                                                                                <div class="title_holder">
+                                                                                    <div class="fn__meta">
+                                                                                        <p><a class=" fn_last_category" href=" category/travel/cultural-journeys/">Cultural</a><span class="meta_sep"></span>
+                                                                                            <span
+                                                                                                class="meta_item meta_date" title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <h3 class="post_title"><a href="do-you-need-to-change-yourself/">Smartphone Hacks Everyone Needs to Know to Extend Battery Life</a></h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <div class="epsilon_item">
+                                                                            <div class="epsilon__item">
+                                                                                <div class="img_holder">
+                                                                                    <div class="item_img">
+                                                                                        <a href="the-absolutely-ridiculous-history/">
+                                                                                            <div class="fn__gallery_count" data-size="l"><span>11</span><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/gallery.svg"
+                                                                                                    alt="svg"></div><img decoding="async" loading="lazy" src="wp-content/uploads/2023/01/pexels-valeria-boltneva-1510690.jpg"
+                                                                                                alt=""></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="title_holder">
+                                                                                    <div class="fn__meta">
+                                                                                        <p><a class=" fn_last_category" href=" category/travel/">Travel</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                                title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    <h3 class="post_title"><a href="the-absolutely-ridiculous-history/">Foods Recommended by Doctors to Boost Your Immune System Naturally</a></h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-c6cc203 elementor-widget elementor-widget-frel-posts" data-id="c6cc203" data-element_type="widget" data-widget_type="frel-posts.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                            <div class="fn__widget_posts_epsilon" data-title-size="l">
+                                                <div class="fn__widget_filter_content">
+                                                    <div class="first_item epsilon_items active">
+                                                        <div class="epsilon_item">
+                                                            <div class="epsilon__item">
+                                                                <div class="img_holder">
+                                                                    <div class="item_img"><a href="the-greatest-life-hacks/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/pexels-quang-nguyen-vinh-222549-2163950.jpg" alt=""></a></div>
+                                                                </div>
+                                                                <div class="title_holder">
+                                                                    <div class="fn__meta">
+                                                                        <p><a class=" fn_last_category" href=" category/lifestyle/">Lifestyle</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <h3 class="post_title"><a href="the-greatest-life-hacks/">Celebrities Making Headlines with Climate Activism and Awareness</a></h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-9b612ad elementor-widget elementor-widget-frel-divider" data-id="9b612ad" data-element_type="widget" data-widget_type="frel-divider.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn_cs_divider">
+                                            <div class="fn_cs_divider_in"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-06ba471 e-con-full e-flex e-con e-child" data-id="06ba471" data-element_type="container">
+                                    <div class="elementor-element elementor-element-e38030b e-con-full e-flex e-con e-child" data-id="e38030b" data-element_type="container">
+                                        <div class="elementor-element elementor-element-3ee6244 elementor-widget elementor-widget-frel-posts" data-id="3ee6244" data-element_type="widget" data-widget_type="frel-posts.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                                    <div class="fn__widget_posts_zeta">
+                                                        <div class="fn__widget_filter_content">
+                                                            <ul class="first_item zeta_items active">
+                                                                <li class="zeta_item">
+                                                                    <div class="zeta__item">
+                                                                        <div class="title_holder">
+                                                                            <div class="fn__meta">
+                                                                                <p><a class=" fn_last_category" href=" category/lifestyle/">Lifestyle</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                        title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="zeta_title">
+                                                                                <h3 class="post_title"><a href="a-search-tool-for-serendipity/">How Time in Nature Boosts Mental Health and Reduces Stress</a></h3>
+                                                                                <p class="fn__descr">Discover how technology can unlock unexpected moments of joy and insight. This post explores the power of a search tool designed not just to find what you're looking for—but
+                                                                                    to surprise you along the way.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-ab47ba9 e-con-full e-flex e-con e-child" data-id="ab47ba9" data-element_type="container">
+                                        <div class="elementor-element elementor-element-8195bc2 elementor-widget elementor-widget-frel-posts" data-id="8195bc2" data-element_type="widget" data-widget_type="frel-posts.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                                    <div class="fn__widget_posts_zeta">
+                                                        <div class="fn__widget_filter_content">
+                                                            <ul class="first_item zeta_items active">
+                                                                <li class="zeta_item">
+                                                                    <div class="zeta__item">
+                                                                        <div class="title_holder">
+                                                                            <div class="fn__meta">
+                                                                                <p><a class=" fn_last_category" href=" category/travel/luxury-escapes/">Luxury</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                        title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="zeta_title">
+                                                                                <h3 class="post_title"><a href="working-from-home-tanked-my-productivity/">How to Save on Groceries Without Sacrificing Quality or Freshness</a></h3>
+                                                                                <p
+                                                                                    class="fn__descr">Unleash the power of healthy habits with easy-to-follow tips that will boost your well-being and improve your daily life.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-c88cb42 e-con-full e-flex e-con e-child" data-id="c88cb42" data-element_type="container">
+                                <div class="elementor-element elementor-element-2cd6a95 elementor-widget elementor-widget-frel-posts" data-id="2cd6a95" data-element_type="widget" data-widget_type="frel-posts.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                            <div class="fn__widget_posts_epsilon" data-title-size="m">
+                                                <div class="fn__widget_filter_content">
+                                                    <div class="first_item epsilon_items active">
+                                                        <div class="epsilon_item">
+                                                            <div class="epsilon__item">
+                                                                <div class="img_holder">
+                                                                    <div class="item_img"><a href="famous-works-of-literature/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/street-3372454_1280.jpg" alt=""></a></div>
+                                                                </div>
+                                                                <div class="title_holder">
+                                                                    <div class="fn__meta">
+                                                                        <p><a class=" fn_last_category" href=" category/travel/">Travel</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <h3 class="post_title"><a href="famous-works-of-literature/">Global Markets Rebound as Inflation Worries Ease for Investors</a></h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-6c123ba elementor-widget elementor-widget-frel-posts" data-id="6c123ba" data-element_type="widget" data-widget_type="frel-posts.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                            <div class="fn__widget_posts_epsilon" data-title-size="m">
+                                                <div class="fn__widget_filter_content">
+                                                    <div class="first_item epsilon_items active">
+                                                        <div class="epsilon_item">
+                                                            <div class="epsilon__item">
+                                                                <div class="img_holder">
+                                                                    <div class="item_img"><a href="a-search-tool-for-serendipity/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/skull-1193784_1280.jpg" alt=""></a></div>
+                                                                </div>
+                                                                <div class="title_holder">
+                                                                    <div class="fn__meta">
+                                                                        <p><a class=" fn_last_category" href=" category/travel/family-getaways/">Family</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <h3 class="post_title"><a href="a-search-tool-for-serendipity/">How Time in Nature Boosts Mental Health and Reduces Stress</a></h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-1621d65 elementor-widget elementor-widget-frel-posts" data-id="1621d65" data-element_type="widget" data-widget_type="frel-posts.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="fn__w_posts" data-hlight-color="" data-readmore-color="default">
+                                            <div class="fn__widget_posts_alpha" data-color="">
+                                                <div class="fn__widget_filter_content">
+                                                    <ul class="first_item alpha_items active">
+                                                        <li class="alpha_item">
+                                                            <div class="alpha__item">
+                                                                <div class="img_holder">
+                                                                    <div class="item_img"><a href="dont-be-in-the-moment/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/pexels-olly-3755755-150x150.jpg" alt=""></a></div>
+                                                                </div>
+                                                                <div class="title_holder">
+                                                                    <div class="fn__meta">
+                                                                        <p><a class=" fn_last_category" href=" category/travel/family-getaways/">Family</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <h3 class="post_title"><a href="dont-be-in-the-moment/">Sleep Science Shows Why Quality Matters More Than Duration</a></h3>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="alpha_item">
+                                                            <div class="alpha__item">
+                                                                <div class="img_holder">
+                                                                    <div class="item_img"><a href="how-to-think-about-your-career/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/pexels-drew-williams-1285451-3098619-150x150.jpg" alt=""></a></div>
+                                                                </div>
+                                                                <div class="title_holder">
+                                                                    <div class="fn__meta">
+                                                                        <p><a class=" fn_last_category" href=" category/interior/">Interior</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <h3 class="post_title"><a href="how-to-think-about-your-career/">Record-Breaking Heat Sweeps Europe, Sparking Climate Warnings</a></h3>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="alpha_item">
+                                                            <div class="alpha__item">
+                                                                <div class="img_holder">
+                                                                    <div class="item_img"><a href="the-creativity-supply-chain/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/lake-1365288_1280-150x150.jpg" alt=""></a></div>
+                                                                </div>
+                                                                <div class="title_holder">
+                                                                    <div class="fn__meta">
+                                                                        <p><a class=" fn_last_category" href=" category/interior/">Interior</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <h3 class="post_title"><a href="the-creativity-supply-chain/">Essential Skills Every Professional Needs for Success in 2024</a></h3>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="alpha_item">
+                                                            <div class="alpha__item">
+                                                                <div class="img_holder">
+                                                                    <div class="item_img"><a href="in-praise-of-quiet-resistance/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/beautiful-8419067_1280-150x150.jpg" alt=""></a></div>
+                                                                </div>
+                                                                <div class="title_holder">
+                                                                    <div class="fn__meta">
+                                                                        <p><a class=" fn_last_category" href=" category/travel/luxury-escapes/">Luxury</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <h3 class="post_title"><a href="in-praise-of-quiet-resistance/">Quick Stress-Relief Tips for Today’s Fast-Paced Lifestyle</a></h3>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-ee953f8 e-con-full e-flex e-con e-parent" data-id="ee953f8" data-element_type="container">
+                            <div class="elementor-element elementor-element-ee8063b elementor-widget elementor-widget-frel-categories" data-id="ee8063b" data-element_type="widget" data-widget_type="frel-categories.default">
+                                <div class="elementor-widget-container">
+                                    <div class="fn_cs_cats_list" data-color="">
+                                        <div class="container">
+                                            <div class="cats_list">
+                                                <ul>
+                                                    <li>
+                                                        <div class="item">
+                                                            <div class="img_holder" data-bg-img="wp-content/uploads/2024/10/fashion-150x150.jpg"><a href="category/fashion/"></a></div>
+                                                            <div class="title_holder">
+                                                                <h3 class="name"><a href="category/fashion/">Fashion</a></h3>
+                                                                <p class="count">2 Articles</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <div class="img_holder" data-bg-img="wp-content/uploads/2023/01/343546543-150x150.jpg"><a href="category/food/"></a></div>
+                                                            <div class="title_holder">
+                                                                <h3 class="name"><a href="category/food/">Food</a></h3>
+                                                                <p class="count">2 Articles</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <div class="img_holder" data-bg-img="wp-content/uploads/2024/10/health-150x150.jpg"><a href="category/health/"></a></div>
+                                                            <div class="title_holder">
+                                                                <h3 class="name"><a href="category/health/">Health</a></h3>
+                                                                <p class="count">4 Articles</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <div class="img_holder" data-bg-img="wp-content/uploads/2024/10/living-room-1835923_1280-150x150.jpg"><a href="category/interior/"></a></div>
+                                                            <div class="title_holder">
+                                                                <h3 class="name"><a href="category/interior/">Interior</a></h3>
+                                                                <p class="count">4 Articles</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <div class="img_holder" data-bg-img="wp-content/uploads/2024/10/beach-1868132_1280-150x150.jpg"><a href="category/lifestyle/"></a></div>
+                                                            <div class="title_holder">
+                                                                <h3 class="name"><a href="category/lifestyle/">Lifestyle</a></h3>
+                                                                <p class="count">6 Articles</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="item">
+                                                            <div class="img_holder" data-bg-img="wp-content/uploads/2023/01/3445465775-150x150.jpg"><a href="category/travel/"></a></div>
+                                                            <div class="title_holder">
+                                                                <h3 class="name"><a href="category/travel/">Travel</a></h3>
+                                                                <p class="count">7 Articles</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-3166e14 e-con-full e-flex e-con e-parent" data-id="3166e14" data-element_type="container">
+                            <div class="elementor-element elementor-element-9db460c elementor-widget elementor-widget-frel-ad" data-id="9db460c" data-element_type="widget" data-widget_type="frel-ad.default">
+                                <div class="elementor-widget-container">
+                                    <div class="fn_cs_ad">
+                                        <div class="container">
+                                            <div class="fn_cs_ad_in" data-bg="yes">
+                                                <h3 class="ad_title">Advertisement</h3>
+                                                <div class="ad_content"><a href="https://frenify.com/" rel="nofollow" target="_blank"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/ad23.jpg" alt=""></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-27d28cb e-con-full e-flex e-con e-parent" data-id="27d28cb" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                            <div class="elementor-element elementor-element-1aa4d19 elementor-widget elementor-widget-frel-title" data-id="1aa4d19" data-element_type="widget" data-widget_type="frel-title.default">
+                                <div class="elementor-widget-container">
+                                    <div class="fn__cs_title_wrapper">
+                                        <div class="fn__cs_title_big_marquee fn_cs_cats_big_marquee" data-color="yes">
+                                            <div class="marquee">
+                                                <div class="item">Featured
+                                                    <div class="item_sep"></div>
+                                                </div>
+                                                <div class="item">Featured
+                                                    <div class="item_sep"></div>
+                                                </div>
+                                                <div class="item">Featured
+                                                    <div class="item_sep"></div>
+                                                </div>
+                                                <div class="item">Featured
+                                                    <div class="item_sep"></div>
+                                                </div>
+                                                <div class="item">Featured
+                                                    <div class="item_sep"></div>
+                                                </div>
+                                                <div class="item">Featured
+                                                    <div class="item_sep"></div>
+                                                </div>
+                                                <div class="item">Featured
+                                                    <div class="item_sep"></div>
+                                                </div>
+                                                <div class="item">Featured
+                                                    <div class="item_sep"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-06e5640 elementor-widget elementor-widget-frel-posts" data-id="06e5640" data-element_type="widget" data-widget_type="frel-posts.default">
+                                <div class="elementor-widget-container">
+                                    <div class="fn__w_posts" data-hlight-color="yes" data-readmore-color="light">
+                                        <div class="fn__widget_posts_fcarousel">
+                                            <div class="container">
+                                                <div class="fn__widget_posts_fcarousel_in">
+                                                    <div class="fn__widget_filter_content">
+                                                        <div class="first_item fcarousel_items active">
+                                                            <div class="fn__circle_slider">
+                                                                <div class="fn-block-progress-circle"><svg class="progress-svg" viewBox="0 0 30 30"><circle class="progress-bar" r="13" cx="15" cy="15"></circle></svg></div>
+                                                                <div class="swiper">
+                                                                    <div class="swiper-wrapper">
+                                                                        <div class="swiper-slide">
+                                                                            <div class="fcarousel_item">
+                                                                                <div class="fcarousel__item">
+                                                                                    <div class="img_holder">
+                                                                                        <div class="item_img"><a href="leaving-san-francisco/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/tree-8787178_1280.jpg" alt=""></a></div>
+                                                                                    </div>
+                                                                                    <div class="title_holder">
+                                                                                        <div class="title_holder_in">
+                                                                                            <div class="fn__meta">
+                                                                                                <p><a class=" fn_last_category" href=" category/travel/">Travel</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                                        title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <h3 class="post_title"><a href="leaving-san-francisco/">Travel Experts Predict Top Destinations to Shape 2024 Tourism</a></h3>
+                                                                                            <p class="fn__descr">Discover hidden travel tips and secrets that will transform your next trip into a truly unforgettable experience.</p>
+                                                                                            <div class="fn__read_more"><a href="leaving-san-francisco/" aria-label="Travel Experts Predict Top Destinations to Shape 2024 Tourism"><span class="text">Read More</span><span class="icon"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_3.svg" alt="svg"></span></a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <div class="fcarousel_item">
+                                                                                <div class="fcarousel__item">
+                                                                                    <div class="img_holder">
+                                                                                        <div class="item_img"><a href="what-marriage-means-to-me/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/ai-generated-8945669_1920.jpg" alt=""></a></div>
+                                                                                    </div>
+                                                                                    <div class="title_holder">
+                                                                                        <div class="title_holder_in">
+                                                                                            <div class="fn__meta">
+                                                                                                <p><a class=" fn_last_category" href=" category/travel/">Travel</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                                        title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <h3 class="post_title"><a href="what-marriage-means-to-me/">Top Tips to Stay Motivated and Avoid Burnout While Working Remotely</a></h3>
+                                                                                            <p
+                                                                                                class="fn__descr">From budgeting to packing hacks, here’s everything you need to know to make travel stress-free and enjoyable.</p>
+                                                                                                <div class="fn__read_more"><a href="what-marriage-means-to-me/" aria-label="Top Tips to Stay Motivated and Avoid Burnout While Working Remotely"><span class="text">Read More</span><span class="icon"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_3.svg" alt="svg"></span></a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="swiper-slide">
+                                                                            <div class="fcarousel_item">
+                                                                                <div class="fcarousel__item">
+                                                                                    <div class="fn__video_post paused" data-video="youtube" data-ratio="1.5">
+                                                                                        <div class="blog__image"><a class="fn__full_link" href="a-love-letter-to-los-angeles/"></a>
+                                                                                            <div class="fn__video_icons"><button class="fn__video_btn_play"><span class="t_text">Play / Pause</span><span class="play"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__play.svg" alt="svg"></span><span class="pause"></span></button>
+                                                                                                <button
+                                                                                                    class="fn__video_btn_volume"><span class="t_text">Mute / Unmute</span><span class="mute"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__mute.svg" alt="svg"></span>
+                                                                                                    <span
+                                                                                                        class="unmute"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__unmute.svg" alt="svg"></span>
+                                                                                                        </button><a class="fn__video_btn_youtube" href="https://www.youtube.com/watch?v=junJU-qj92k" target="_blank"><span class="t_text">Watch Full Video on YouTube</span><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__youtube.svg" alt="svg"></a></div>
+                                                                                            <div
+                                                                                                class="fn__video_youtube" data-property="{videoURL:'https://www.youtube.com/watch?v=junJU-qj92k', containment:'self', autoPlay:false, loop:true, mute:true, showControls:false, stopMovieOnBlur:false, startAt:0, stopAt:5, opacity:1, showYTLogo: false, anchor: 'center,center'}"></div><img decoding="async" loading="lazy" class="yt_fallback_img" src="wp-content/uploads/2024/10/video-thumb.jpg"
+                                                                                            alt="Fallback Image"></div>
+                                                                                </div>
+                                                                                <div class="title_holder">
+                                                                                    <div class="title_holder_in">
+                                                                                        <div class="fn__meta">
+                                                                                            <p><a class=" fn_last_category" href=" category/travel/">Travel</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                                    title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <h3 class="post_title"><a href="a-love-letter-to-los-angeles/">How to Pose People Who Are Not Models for Natural and Authentic Portraits</a></h3>
+                                                                                        <p
+                                                                                            class="fn__descr">From energy-efficient appliances to eco-friendly materials, learn how to make your home greener and more sustainable.</p>
+                                                                                            <div class="fn__read_more"><a href="a-love-letter-to-los-angeles/" aria-label="How to Pose People Who Are Not Models for Natural and Authentic Portraits"><span class="text">Read More</span><span class="icon"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_3.svg" alt="svg"></span></a></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <div class="fcarousel_item">
+                                                                            <div class="fcarousel__item">
+                                                                                <div class="img_holder">
+                                                                                    <div class="item_img"><a href="its-not-just-the-passing-of-a-queen/"><img decoding="async" loading="lazy" src="wp-content/uploads/2024/10/3432464.jpg" alt=""></a></div>
+                                                                                </div>
+                                                                                <div class="title_holder">
+                                                                                    <div class="title_holder_in">
+                                                                                        <div class="fn__meta">
+                                                                                            <p><a class=" fn_last_category" href=" category/travel/adventures-expeditions/">Adventures</a><span class="meta_sep"></span>
+                                                                                                <span
+                                                                                                    class="meta_item meta_date" title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <h3 class="post_title"><a href="its-not-just-the-passing-of-a-queen/">New Study Reveals Simple Lifestyle Changes Linked to Longer Life</a></h3>
+                                                                                        <p
+                                                                                            class="fn__descr">From energy-efficient appliances to eco-friendly materials, learn how to make your home greener and more sustainable.</p>
+                                                                                            <div class="fn__read_more"><a href="its-not-just-the-passing-of-a-queen/" aria-label="New Study Reveals Simple Lifestyle Changes Linked to Longer Life"><span class="text">Read More</span><span class="icon"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_3.svg" alt="svg"></span></a></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <div class="fcarousel_item">
+                                                                            <div class="fcarousel__item">
+                                                                                <div class="img_holder">
+                                                                                    <div class="item_img"><a href="do-you-need-to-change-yourself/"><img decoding="async" loading="lazy" src="wp-content/uploads/2023/01/544575.jpg" alt=""></a></div>
+                                                                                </div>
+                                                                                <div class="title_holder">
+                                                                                    <div class="title_holder_in">
+                                                                                        <div class="fn__meta">
+                                                                                            <p><a class=" fn_last_category" href=" category/travel/">Travel</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                                    title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <h3 class="post_title"><a href="do-you-need-to-change-yourself/">Smartphone Hacks Everyone Needs to Know to Extend Battery Life</a></h3>
+                                                                                        <p
+                                                                                            class="fn__descr">Struggling with work-life balance? Learn the top strategies to stay productive and avoid burnout in today’s remote work landscape.</p>
+                                                                                            <div class="fn__read_more"><a href="do-you-need-to-change-yourself/" aria-label="Smartphone Hacks Everyone Needs to Know to Extend Battery Life"><span class="text">Read More</span><span class="icon"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_3.svg" alt="svg"></span></a></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <div class="fcarousel_item">
+                                                                            <div class="fcarousel__item">
+                                                                                <div class="img_holder">
+                                                                                    <div class="item_img">
+                                                                                        <a href="the-absolutely-ridiculous-history/">
+                                                                                            <div class="fn__gallery_count" data-size="l"><span>11</span><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/gallery.svg"
+                                                                                                    alt="svg"></div><img decoding="async" loading="lazy" src="wp-content/uploads/2023/01/pexels-valeria-boltneva-1510690.jpg"
+                                                                                                alt=""></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="title_holder">
+                                                                                    <div class="title_holder_in">
+                                                                                        <div class="fn__meta">
+                                                                                            <p><a class=" fn_last_category" href=" category/travel/">Travel</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                                                    title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <h3 class="post_title"><a href="the-absolutely-ridiculous-history/">Foods Recommended by Doctors to Boost Your Immune System Naturally</a></h3>
+                                                                                        <p
+                                                                                            class="fn__descr">Here’s how to turn small spaces into cozy retreats with simple, affordable decor ideas that work for any style.</p>
+                                                                                            <div class="fn__read_more"><a href="the-absolutely-ridiculous-history/" aria-label="Foods Recommended by Doctors to Boost Your Immune System Naturally"><span class="text">Read More</span><span class="icon"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_3.svg" alt="svg"></span></a></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="slider_nav">
+                                                                <div class="slider_nav_in">
+                                                                    <div class="swiper-button-prev"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></div>
+                                                                    <div class="swiper-button-next"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_4.svg" alt="svg"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-37d3f6b e-con-full e-flex e-con e-parent" data-id="37d3f6b" data-element_type="container">
+                        <div class="elementor-element elementor-element-c21f325 elementor-widget elementor-widget-frel-subscribe" data-id="c21f325" data-element_type="widget" data-widget_type="frel-subscribe.default">
+                            <div class="elementor-widget-container">
+                                <div class="fn_cs_subscribe_wrapper">
+                                    <div class="container">
+                                        <div class="fn__subscribe_block">
+                                            <div class="sb_left">
+                                                <h3>Stay Informed With the Latest & Most Important News</h3>
+                                            </div>
+                                            <div class="sb_right">
+                                                <script>
+                                                    (function() {
+                                                        window.mc4wp = window.mc4wp || {
+                                                            listeners: [],
+                                                            forms: {
+                                                                on: function(evt, cb) {
+                                                                    window.mc4wp.listeners.push({
+                                                                        event: evt,
+                                                                        callback: cb
+                                                                    });
+                                                                }
+                                                            }
+                                                        }
+                                                    })();
+                                                </script>
+                                                <!-- Mailchimp for WordPress v4.9.19 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                                                <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-314" method="post" data-id="314" data-name="Newspaper">
+                                                    <div class="mc4wp-form-fields">
+                                                        <div class="subscribe_holder"><input type="email" name="EMAIL" placeholder="Your email address" required /><input type="submit" value="Subscribe" /></div>
+                                                        <p class="agree"><span>I consent to receive newsletter via email. For further information, 
+  please review our <a href="#">Privacy Policy</a></span></p>
+                                                    </div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp"
+                                                        value="1734799496" /><input type="hidden" name="_mc4wp_form_id" value="314" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
+                                                    <div class="mc4wp-response"></div>
+                                                </form>
+                                                <!-- / Mailchimp for WordPress Plugin -->
+                                            </div><span class="sb_icon"><img decoding="async" class="fn__svg " src="wp-content/themes/mow/framework/svg/paperplane.svg" alt="svg"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    
+    <!-- Close Page -->
+
+
+
+    <!-- Footer -->
+    <footer id="mow_fn_footer" class="mow_fn_footer on_social off_widgets">
+
+        <div class="mow_fn_footer_social_list">
+            <div class="container">
+                <div class="social_in">
+                    <div class="social_list">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank" aria-label="facebook">
+							<span class="icon">
+								<img class="fn__svg reg_svg" src="wp-content/themes/mow/framework/svg/social/facebook.svg" alt="svg">
+								<img class="fn__svg hov_svg" src="wp-content/themes/mow/framework/svg/social/facebook.svg" alt="svg">
+							</span>
+							<span class="text">facebook</span>
+						</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" aria-label="X Network">
+							<span class="icon">
+								<img class="fn__svg reg_svg" src="wp-content/themes/mow/framework/svg/social/twitter.svg" alt="svg">
+								<img class="fn__svg hov_svg" src="wp-content/themes/mow/framework/svg/social/twitter.svg" alt="svg">
+							</span>
+							<span class="text">X Network</span>
+						</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" aria-label="pinterest">
+							<span class="icon">
+								<img class="fn__svg reg_svg" src="wp-content/themes/mow/framework/svg/social/pinterest.svg" alt="svg">
+								<img class="fn__svg hov_svg" src="wp-content/themes/mow/framework/svg/social/pinterest.svg" alt="svg">
+							</span>
+							<span class="text">pinterest</span>
+						</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" aria-label="instagram">
+							<span class="icon">
+								<img class="fn__svg reg_svg" src="wp-content/themes/mow/framework/svg/social/instagram.svg" alt="svg">
+								<img class="fn__svg hov_svg" src="wp-content/themes/mow/framework/svg/social/instagram.svg" alt="svg">
+							</span>
+							<span class="text">instagram</span>
+						</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_w_social_wrapper">
+            <div class="container">
+                <div class="footer_w_social">
+                    <div class="w_cols" data-cols="4">
+                        <div class="w_col">
+                            <div id="media_image-2" class="widget_block fn__clearfix widget_media_image"><a href="https://frenify.com/"><img width="161" height="54" src="wp-content/uploads/2024/10/footer-logo.png" class="image wp-image-408  attachment-full size-full" alt="" style="max-width: 100%;height: auto" /></a></div>
+                            <div
+                                id="text-2" class="widget_block fn__clearfix widget_text">
+                                <div class="textwidget">
+                                    <p>Our platform covers everything from global events and politics to entertainment, technology, and lifestyle, ensuring you never miss a story.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="w_col">
+                        <div id="nav_menu-2" class="widget_block fn__clearfix widget_nav_menu">
+                            <div class="wid-title"><span class="text"><span>Links</span></span>
+                            </div>
+                            <div class="menu-footer-links-container">
+                                <ul id="menu-footer-links" class="menu">
+                                    <li id="menu-item-409" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-409"><a href="#">Privacy Policy</a></li>
+                                    <li id="menu-item-410" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-410"><a href="#">Terms &#038; Conditons</a></li>
+                                    <li id="menu-item-411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-411"><a href="#">Why Us</a></li>
+                                    <li id="menu-item-412" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-412"><a href="#">Team</a></li>
+                                    <li id="menu-item-413" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-413"><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_col">
+                        <div id="nav_menu-3" class="widget_block fn__clearfix widget_nav_menu">
+                            <div class="wid-title"><span class="text"><span>Menu</span></span>
+                            </div>
+                            <div class="menu-footer-widget-menu-container">
+                                <ul id="menu-footer-widget-menu" class="menu">
+                                    <li id="menu-item-780" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-780"><a href="#">Partners &#038; Certifications</a></li>
+                                    <li id="menu-item-779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-779"><a href="#">Case Studies</a></li>
+                                    <li id="menu-item-781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-781"><a href="#">Events &#038; FAQ</a></li>
+                                    <li id="menu-item-782" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-782"><a href="#">Solutions</a></li>
+                                    <li id="menu-item-783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-783"><a href="#">Reviews &#038; Awards</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_col">
+                        <div id="mc4wp_form_widget-2" class="widget_block fn__clearfix widget_mc4wp_form_widget">
+                            <div class="wid-title"><span class="text"><span>Newsletter</span></span>
+                            </div>
+                            <script>
+                                (function() {
+                                    window.mc4wp = window.mc4wp || {
+                                        listeners: [],
+                                        forms: {
+                                            on: function(evt, cb) {
+                                                window.mc4wp.listeners.push({
+                                                    event: evt,
+                                                    callback: cb
+                                                });
+                                            }
+                                        }
+                                    }
+                                })();
+                            </script>
+                            <!-- Mailchimp for WordPress v4.9.19 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                            <form id="mc4wp-form-3" class="mc4wp-form mc4wp-form-314" method="post" data-id="314" data-name="Newspaper">
+                                <div class="mc4wp-form-fields">
+                                    <div class="subscribe_holder"><input type="email" name="EMAIL" placeholder="Your email address" required /><input type="submit" value="Subscribe" /></div>
+                                    <p class="agree"><span>I consent to receive newsletter via email. For further information, 
+  please review our <a href="#">Privacy Policy</a></span></p>
+                                </div><label>Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1734799496" /><input type="hidden" name="_mc4wp_form_id"
+                                    value="314" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-3" />
+                                <div class="mc4wp-response"></div>
+                            </form>
+                            <!-- / Mailchimp for WordPress Plugin -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="footer_bottom_in">
+
+                    <div class="fbi_item">
+                        <div class="menu-footer-menu-container">
+                            <ul id="menu-footer-menu" class="footer_menu">
+                                <li id="menu-item-239" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-239"><a href="#">Home</a></li>
+                                <li id="menu-item-240" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-240"><a href="#">About Us</a></li>
+                                <li id="menu-item-241" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-241"><a href="#">Contact Us</a></li>
+                                <li id="menu-item-414" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-414"><a href="#">Privacy Policy</a></li>
+                                <li id="menu-item-415" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-415"><a href="#">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="fbi_item">
+                        <p class="copyright">
+                            Copyright © 2024 MOW. All rights reserved. </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /Footer Bottom -->
+
+    </footer>
+    <!-- !Footer -->
+
+    </div>
+
+
+
+    <script>
+        (function() {
+            function maybePrefixUrlField() {
+                const value = this.value.trim()
+                if (value !== '' && value.indexOf('http') !== 0) {
+                    this.value = 'http://' + value
+                }
+            }
+
+            const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
+            for (let j = 0; j < urlFields.length; j++) {
+                urlFields[j].addEventListener('blur', maybePrefixUrlField)
+            }
+        })();
+    </script>
+
+
+    <div class="frenify-cursor cursor-outer" data-default="yes" data-link="yes" data-slider="yes"><span class="fn-cursor"></span></div>
+    <div class="frenify-cursor cursor-inner" data-default="yes" data-link="yes" data-slider="yes"><span class="fn-cursor"><span class="fn-left"></span><span class="fn-right"></span></span>
+    </div>
+
+    <!-- Right Fixed Social List -->
+    <div class="mow_fn_fixed_social_list has_title"><span class="title">Follow</span>
+        <ul>
+            <li>
+                <a href="#" target="_blank" aria-label="facebook">
+							<span class="icon">
+								<img class="fn__svg hov_svg" src="wp-content/themes/mow/framework/svg/social/facebook.svg" alt="svg">
+							</span>
+							<span class="text">facebook</span>
+						</a>
+            </li>
+            <li>
+                <a href="#" target="_blank" aria-label="twitter">
+							<span class="icon">
+								<img class="fn__svg hov_svg" src="wp-content/themes/mow/framework/svg/social/twitter.svg" alt="svg">
+							</span>
+							<span class="text">twitter</span>
+						</a>
+            </li>
+            <li>
+                <a href="#" target="_blank" aria-label="pinterest">
+							<span class="icon">
+								<img class="fn__svg hov_svg" src="wp-content/themes/mow/framework/svg/social/pinterest.svg" alt="svg">
+							</span>
+							<span class="text">pinterest</span>
+						</a>
+            </li>
+            <li>
+                <a href="#" target="_blank" aria-label="instagram">
+							<span class="icon">
+								<img class="fn__svg hov_svg" src="wp-content/themes/mow/framework/svg/social/instagram.svg" alt="svg">
+							</span>
+							<span class="text">instagram</span>
+						</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /Right Fixed Social List -->
+
+
+
+    <!-- Right Bar (Trigger/Search/Hot/Woo) -->
+    <div class="mow_fn_fixed_right_bar">
+        <div class="help_bar">
+            <a href="#" class="mow_fn_register_opener">
+						<span class="icon"><img class="fn__svg " src="wp-content/themes/mow/framework/svg/user.svg" alt="svg"></span>
+						<span class="t_text">Sign In/Sign Up</span>
+					</a> <a href="#" class="trigger"><span class="icon"></span><span class="t_text">Sidebar</span></a>
+            <a href="#" class="search"><img class="fn__svg " src="wp-content/themes/mow/framework/svg/search.svg" alt="svg"><span class="t_text">Search</span></a>
+            <a href="hot-posts/" class="trending"><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__trending.svg" alt="svg"><span class="t_text">Trending</span></a>
+        </div>
+    </div>
+
+    <div class="mow_fn_fixed_posts" data-max="7" data-total="7">
+        <div class="label">
+            <span class="text">Popular Now</span>
+            <span class="icon"><img class="fn__svg " src="wp-content/themes/mow/framework/svg/svg__arrow_2.svg" alt="svg"></span>
+        </div>
+        <div class="posts">
+            <ul>
+                <li>
+                    <a href="what-marriage-means-to-me/" data-id="112">
+                        <div class="img_holder"><img src="wp-content/uploads/2024/10/ai-generated-8945669_1920-150x150.jpg" alt=""></div>
+                        <div class="item_rank">01</div> <span class="t_title"><span>Top Tips to Stay Motivated and Avoid Burnout While Working Remotely</span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="a-love-letter-to-los-angeles/" data-id="110">
+                        <div class="img_holder"><img src="wp-content/uploads/2024/10/video-thumb-150x150.jpg" alt=""></div>
+                        <div class="item_rank">02</div> <span class="t_title"><span>How to Pose People Who Are Not Models for Natural and Authentic Portraits</span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="its-not-just-the-passing-of-a-queen/" data-id="107">
+                        <div class="img_holder"><img src="wp-content/uploads/2024/10/3432464-150x150.jpg" alt=""></div>
+                        <div class="item_rank">03</div> <span class="t_title"><span>New Study Reveals Simple Lifestyle Changes Linked to Longer Life</span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="the-absolutely-ridiculous-history/" data-id="103">
+                        <div class="img_holder"><img src="wp-content/uploads/2023/01/pexels-valeria-boltneva-1510690-150x150.jpg" alt=""></div>
+                        <div class="item_rank">04</div> <span class="t_title"><span>Foods Recommended by Doctors to Boost Your Immune System Naturally</span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="do-you-need-to-change-yourself/" data-id="105">
+                        <div class="img_holder"><img src="wp-content/uploads/2023/01/544575-150x150.jpg" alt=""></div>
+                        <div class="item_rank">05</div> <span class="t_title"><span>Smartphone Hacks Everyone Needs to Know to Extend Battery Life</span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="famous-works-of-literature/" data-id="101">
+                        <div class="img_holder"><img src="wp-content/uploads/2024/10/street-3372454_1280-150x150.jpg" alt=""></div>
+                        <div class="item_rank">06</div> <span class="t_title"><span>Global Markets Rebound as Inflation Worries Ease for Investors</span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="leaving-san-francisco/" data-id="114">
+                        <div class="img_holder"><img src="wp-content/uploads/2024/10/tree-8787178_1280-150x150.jpg" alt=""></div>
+                        <div class="item_rank">07</div> <span class="t_title"><span>Travel Experts Predict Top Destinations to Shape 2024 Tourism</span></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="more_less">
+                <a href="#" data-more="Show More" data-less="Show Less">
+				<span class="t_title"><span>Show More</span></span>
+			</a>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#" class="mow_fn_fixed_totop">
+	<span class="progress"><span></span></span>
+	<span class="text">Scroll to Top</span>
+</a>
+
+
+    <!-- Searchbox -->
+    <div class="mow_fn_searchbox">
+        <div class="container">
+            <div class="search_content">
+                <div class="search_header">
+                    <div class="fn__logo">
+                        <a href=""><img class="dark_logo" src="wp-content/themes/mow/framework/img/logo/logo.png" alt="logo"><img class="light_logo" src="wp-content/themes/mow/framework/img/logo/light-logo.png" alt="logo"></a>                        </div>
+                    <a href="#" class="search_closer"></a>
+                </div>
+                <form class="main_form" action="" method="get">
+                    <div class="input">
+                        <input type="text" placeholder="Search Here..." name="s" autocomplete="off">
+                    </div>
+                    <div class="search">
+                        <input type="submit" class="pe-7s-search" value="Search">
+                    </div>
+                </form>
+                <div class="popular_cats">
+                    <div class="label">Popular Searches:</div>
+                    <div class="cats">
+                        <a href="category/travel/">Travel</a><a href="category/lifestyle/">Lifestyle</a><a href="category/travel/luxury-escapes/">Luxury</a>
+                        <a
+                            href="category/travel/adventures-expeditions/">Adventures</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- !Searchbox -->
+
+    <div class="mow_fn_offcanvas_menu right_enabled">
+        <a href="#" class="offcanvas_closer"><span></span></a>
+        <div class="offcv_wrapper">
+            <div class="container">
+                <div class="offcv_menu">
+                    <div class="offcv_menu_left">
+                        <div class="menu-offcanvas-menu-container">
+                            <ul id="menu-offcanvas-menu" class="mow_fn_offcanvas_nav">
+                                    <li id="menu-item-699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-699"><a href="#"><span>Home</span></a></li>
+                                    <li id="menu-item-700" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-700"><a href="#"><span>About</span></a></li>
+                                    <li id="menu-item-701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-701"><a href="#"><span>Latest news</span></a></li>
+                                    <li id="menu-item-702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-702"><a href="#"><span>Blogs</span></a></li>
+                                    <li id="menu-item-704" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-704"><a href="#"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offcv_menu_right">
+                        <div class="offcv_menu_right_in">
+                            <div id="mow_top_articles-2" class="widget_block fn__clearfix widget_mow_top_articles">
+                                <div class="fn__widget_posts_alpha">
+                                    <div class="wid-title"><span class="text"><span>Popular</span></span>
+                                    </div>
+                                    <div class="fn__widget_filter_content">
+                                        <ul class="first_item alpha_items active">
+                                            <li class="alpha_item">
+                                                <div class="alpha__item">
+                                                    <div class="img_holder">
+                                                        <div class="item_img"><a href="what-marriage-means-to-me/"><img loading="lazy" src="wp-content/uploads/2024/10/ai-generated-8945669_1920-150x150.jpg" alt=""></a></div>
+                                                    </div>
+                                                    <div class="title_holder">
+                                                        <div class="fn__meta">
+                                                            <p><a class=" fn_last_category" href=" category/travel/family-getaways/">Family</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                    title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                            </p>
+                                                        </div>
+                                                        <h3 class="post_title"><a href="what-marriage-means-to-me/">Top Tips to Stay Motivated and Avoid Burnout While Working Remotely</a></h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="alpha_item">
+                                                <div class="alpha__item">
+                                                    <div class="img_holder">
+                                                        <div class="item_img"><a href="a-love-letter-to-los-angeles/"><img loading="lazy" src="wp-content/uploads/2024/10/video-thumb-150x150.jpg" alt=""></a></div>
+                                                    </div>
+                                                    <div class="title_holder">
+                                                        <div class="fn__meta">
+                                                            <p><a class=" fn_last_category" href=" category/travel/luxury-escapes/">Luxury</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                    title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                            </p>
+                                                        </div>
+                                                        <h3 class="post_title"><a href="a-love-letter-to-los-angeles/">How to Pose People Who Are Not Models for Natural and Authentic Portraits</a></h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="alpha_item">
+                                                <div class="alpha__item">
+                                                    <div class="img_holder">
+                                                        <div class="item_img"><a href="its-not-just-the-passing-of-a-queen/"><img loading="lazy" src="wp-content/uploads/2024/10/3432464-150x150.jpg" alt=""></a></div>
+                                                    </div>
+                                                    <div class="title_holder">
+                                                        <div class="fn__meta">
+                                                            <p><a class=" fn_last_category" href=" category/travel/adventures-expeditions/">Adventures</a><span class="meta_sep"></span><span class="meta_item meta_date"
+                                                                    title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                            </p>
+                                                        </div>
+                                                        <h3 class="post_title"><a href="its-not-just-the-passing-of-a-queen/">New Study Reveals Simple Lifestyle Changes Linked to Longer Life</a></h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="alpha_item">
+                                                <div class="alpha__item">
+                                                    <div class="img_holder">
+                                                        <div class="item_img"><a href="the-absolutely-ridiculous-history/"><img loading="lazy" src="wp-content/uploads/2023/01/pexels-valeria-boltneva-1510690-150x150.jpg" alt=""></a></div>
+                                                    </div>
+                                                    <div class="title_holder">
+                                                        <div class="fn__meta">
+                                                            <p><a class=" fn_last_category" href=" category/travel/">Travel</a><span class="meta_sep"></span><span class="meta_item meta_date" title="October 5, 2024">2 months ago<span class="meta_sep"></span></span>
+                                                            </p>
+                                                        </div>
+                                                        <h3 class="post_title"><a href="the-absolutely-ridiculous-history/">Foods Recommended by Doctors to Boost Your Immune System Naturally</a></h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mow_fn_register_popup">
+        <div class="container">
+            <div class="register_popup">
+                <div class="register_box">
+
+                    <div class="loading">
+                        <div class="fn__preloader">
+                            <span class="icon"></span>
+                            <div class="text">Loading</div>
+                        </div>
+                    </div>
+                    <div class="ready_in">
+                        <p class="inn">Signing-in <span class="count">3</span> seconds...</p>
+                        <p class="upp">Signing-up <span class="count">3</span> seconds...</p>
+                    </div>
+
+                    <div class="register_header">
+                        <div class="fn__logo">
+                            <a href=""><img class="dark_logo" src="wp-content/themes/mow/framework/img/logo/logo.png" alt="logo"><img class="light_logo" src="wp-content/themes/mow/framework/img/logo/light-logo.png" alt="logo"></a>                            </div>
+                        <a href="#" class="register_closer"></a>
+                    </div>
+
+
+                    <!-- Sign-In Form -->
+                    <div class="mow_fn_sign_in_form">
+
+                        <div class="error_field"></div>
+
+                        <div class="form">
+                            <form id="mow_fn_login_form" method="post">
+                                <div class="item item_email">
+                                    <input placeholder="Username or Email" type="email" id="mow_fn_login_username" name="mow_fn_login_username" required>
+                                </div>
+                                <div class="item item_password">
+                                    <input placeholder="Password" type="password" id="mow_fn_login_password" name="mow_fn_login_password" required>
+                                </div>
+                                <div class="item item_remember">
+                                    <div class="label">
+                                        <label>
+											<span class="fn__checkbox">
+												<input type="checkbox" id="mow_fn_login_rememberme" name="mow_fn_login_rememberme" value="1">
+												<span class="checkmark"></span>
+											</span>
+											<span class="text">Remember Me</span>
+										</label>
+                                    </div>
+                                </div>
+                                <div class="item item_submit">
+                                    <input type="submit" name="submit" value="Sign In">
+                                </div>
+                                <div class="item item_sign_up">
+                                    <p>Not a member? <a class="mow_fn_sign_up_btn" href="#">Sign Up.</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Sign-Up Form -->
+                    <div class="mow_fn_sign_up_form">
+                        <div class="error_field"></div>
+                        <div class="form">
+                            <form id="mow_fn_register_form" method="post">
+                                <div class="item item_username">
+                                    <input placeholder="Username" type="text" id="mow_fn_register_username" name="mow_fn_register_username" required>
+                                </div>
+                                <div class="item item_email">
+                                    <input placeholder="Email" type="email" id="mow_fn_register_email" name="mow_fn_register_email" required>
+                                </div>
+                                <div class="item item_password">
+                                    <input placeholder="Password" type="password" id="mow_fn_register_password" name="mow_fn_register_password" required>
+                                </div>
+                                <div class="item item_confirm_password">
+                                    <input placeholder="Confirm Password" type="password" id="mow_fn_register_confirm_password" name="mow_fn_register_confirm_password" required>
+                                </div>
+                                <div class="item item_submit">
+                                    <input type="submit" name="submit" value="Sign Up">
+                                </div>
+                                <div class="item item_sign_in">
+                                    <p>Have an account? <a class="mow_fn_sign_in_btn" href="#">Sign In.</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WooCommerce Bar -->
+    <div class="mow_fn_woobar">
+        <a href="#" class="bar_extra_closer"></a>
+        <div class="bar_closer">
+            <a href="#"></a>
+        </div>
+
+        <div class="bar__content">
+            <div class="bar_title">Cart</div>
+            <div class="bar_content_in">
+
+                <div class="bar_preloader">
+                    <span class="icon"></span>
+                    <span class="text">Cart updating</span>
+                </div>
+
+                <div class="bar_content">
+                    <div class="mow_fn_cartbox">
+                        <div class="fn_cartbox_empty"><a href="shop/"></a>
+                            <p><span class="icon"><span class="fn__tooltip">Shop</span><img class="fn__svg " src="wp-content/themes/mow/framework/svg/bag.svg" alt="svg"></span>Your cart is currently is
+                                empty. You could visit our shop and start shopping.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- !WooCommerce Bar -->
+    <script type='text/javascript'>
+        const lazyloadRunObserver = () => {
+            const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+            const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        let lazyloadBackground = entry.target;
+                        if (lazyloadBackground) {
+                            lazyloadBackground.classList.add('e-lazyloaded');
+                        }
+                        lazyloadBackgroundObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                rootMargin: '200px 0px 200px 0px'
+            });
+            lazyloadBackgrounds.forEach((lazyloadBackground) => {
+                lazyloadBackgroundObserver.observe(lazyloadBackground);
+            });
+        };
+        const events = [
+            'DOMContentLoaded',
+            'elementor/lazyload/observe',
+        ];
+        events.forEach((event) => {
+            document.addEventListener(event, lazyloadRunObserver);
+        });
+    </script>
+    <script type='text/javascript'>
+        (function() {
+            var c = document.body.className;
+            c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+            document.body.className = c;
+        })();
+    </script>
+    <link rel='stylesheet' id='wc-blocks-style-css' href='wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-9.4.2' type='text/css' media='all' />
+    <script type="text/javascript" src="wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+    <script type="text/javascript" src="wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+    <script type="text/javascript" id="wp-i18n-js-after">
+        /* <![CDATA[ */
+        wp.i18n.setLocaleData({
+            'text direction\u0004ltr': ['ltr']
+        });
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0" id="swv-js"></script>
+    <script type="text/javascript" id="contact-form-7-js-before">
+        /* <![CDATA[ */
+        var wpcf7 = {
+            "api": {
+                "root": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/mow\/news\/wp-json\/",
+                "namespace": "contact-form-7\/v1"
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0" id="contact-form-7-js"></script>
+    <script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.4.2" id="sourcebuster-js-js"></script>
+    <script type="text/javascript" id="wc-order-attribution-js-extra">
+        /* <![CDATA[ */
+        var wc_order_attribution = {
+            "params": {
+                "lifetime": 1.0e-5,
+                "session": 30,
+                "base64": false,
+                "ajaxurl": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/mow\/news\/wp-admin\/admin-ajax.php",
+                "prefix": "wc_order_attribution_",
+                "allowTracking": true
+            },
+            "fields": {
+                "source_type": "current.typ",
+                "referrer": "current_add.rf",
+                "utm_campaign": "current.cmp",
+                "utm_source": "current.src",
+                "utm_medium": "current.mdm",
+                "utm_content": "current.cnt",
+                "utm_id": "current.id",
+                "utm_term": "current.trm",
+                "utm_source_platform": "current.plt",
+                "utm_creative_format": "current.fmt",
+                "utm_marketing_tactic": "current.tct",
+                "session_entry": "current_add.ep",
+                "session_start_time": "current_add.fd",
+                "session_pages": "session.pgs",
+                "session_count": "udata.vst",
+                "user_agent": "udata.uag"
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.4.2" id="wc-order-attribution-js"></script>
+    <script type="text/javascript" src="wp-content/themes/mow/framework/js/mb-YTPlayer.min.js?ver=v1_01.0.2" id="ytplayer-js"></script>
+    <script type="text/javascript" src="wp-content/themes/mow/framework/js/lightgallery.min.js?ver=v1_01.0.2" id="lightgallery-js"></script>
+    <script type="text/javascript" src="wp-content/themes/mow/framework/js/isotope.min.js?ver=v1_01.0.2" id="isotope-js"></script>
+    <script type="text/javascript" src="wp-content/themes/mow/framework/js/swiper.min.js?ver=v1_01.0.2" id="swiper-js"></script>
+    <script type="text/javascript" src="wp-content/themes/mow/framework/js/waypoints.min.js?ver=v1_01.0.2" id="waypoints-js"></script>
+    <script type="text/javascript" src="wp-content/themes/mow/framework/js/marquee.min.js?ver=v1_01.0.2" id="marquee-js"></script>
+    <script type="text/javascript" src="wp-content/themes/mow/config/config-woo/woocommerce.min.js?ver=v1_01.0.2" id="mow-fn-woocommerce-js"></script>
+    <script type="text/javascript" id="mow-fn-init-js-extra">
+        /* <![CDATA[ */
+        var MowAjaxObject = {
+            "ajax_url": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/mow\/news\/wp-admin\/admin-ajax.php",
+            "siteurl": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/mow\/news",
+            "nonce": "fce4d3a8c8",
+            "copiedText": "Copied to clipboard!"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="wp-content/themes/mow/framework/js/init.min.js?ver=v1_01.0.2" id="mow-fn-init-js"></script>
+    <script type="text/javascript" src="wp-includes/js/comment-reply.min.js?ver=6.7.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+    <script type="text/javascript" defer src="wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.9.19" id="mc4wp-forms-api-js"></script>
+    <script type="text/javascript" src="wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.8" id="elementor-webpack-runtime-js"></script>
+    <script type="text/javascript" src="wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.8" id="elementor-frontend-modules-js"></script>
+    <script type="text/javascript" src="wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+    <script type="text/javascript" id="elementor-frontend-js-before">
+        /* <![CDATA[ */
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false,
+                "isScriptDebug": false
+            },
+            "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "download": "Download",
+                "downloadImage": "Download image",
+                "fullscreen": "Fullscreen",
+                "zoom": "Zoom",
+                "share": "Share",
+                "playVideo": "Play Video",
+                "previous": "Previous",
+                "next": "Next",
+                "close": "Close",
+                "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
+                "a11yCarouselPrevSlideMessage": "Previous slide",
+                "a11yCarouselNextSlideMessage": "Next slide",
+                "a11yCarouselFirstSlideMessage": "This is the first slide",
+                "a11yCarouselLastSlideMessage": "This is the last slide",
+                "a11yCarouselPaginationBulletMessage": "Go to slide"
+            },
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+            },
+            "responsive": {
+                "breakpoints": {
+                    "mobile": {
+                        "label": "Mobile Portrait",
+                        "value": 767,
+                        "default_value": 767,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "mobile_extra": {
+                        "label": "Mobile Landscape",
+                        "value": 880,
+                        "default_value": 880,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "tablet": {
+                        "label": "Tablet Portrait",
+                        "value": 1024,
+                        "default_value": 1024,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "tablet_extra": {
+                        "label": "Tablet Landscape",
+                        "value": 1200,
+                        "default_value": 1200,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "laptop": {
+                        "label": "Laptop",
+                        "value": 1366,
+                        "default_value": 1366,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "widescreen": {
+                        "label": "Widescreen",
+                        "value": 2400,
+                        "default_value": 2400,
+                        "direction": "min",
+                        "is_enabled": false
+                    }
+                },
+                "hasCustomBreakpoints": false
+            },
+            "version": "3.25.8",
+            "is_static": false,
+            "experimentalFeatures": {
+                "e_font_icon_svg": true,
+                "additional_custom_breakpoints": true,
+                "container": true,
+                "e_swiper_latest": true,
+                "e_nested_atomic_repeaters": true,
+                "e_optimized_control_loading": true,
+                "e_onboarding": true,
+                "e_css_smooth_scroll": true,
+                "home_screen": true,
+                "nested-elements": true,
+                "editor_v2": true,
+                "e_element_cache": true,
+                "link-in-bio": true,
+                "floating-buttons": true
+            },
+            "urls": {
+                "assets": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/mow\/news\/wp-content\/plugins\/elementor\/assets\/",
+                "ajaxurl": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/mow\/news\/wp-admin\/admin-ajax.php",
+                "uploadUrl": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/mow\/news\/wp-content\/uploads"
+            },
+            "nonces": {
+                "floatingButtonsClickTracking": "4bb6c18e0a"
+            },
+            "swiperClass": "swiper",
+            "settings": {
+                "editorPreferences": []
+            },
+            "kit": {
+                "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                "global_image_lightbox": "yes",
+                "lightbox_enable_counter": "yes",
+                "lightbox_enable_fullscreen": "yes",
+                "lightbox_enable_zoom": "yes",
+                "lightbox_enable_share": "yes",
+                "lightbox_title_src": "title",
+                "lightbox_description_src": "description"
+            },
+            "post": {
+                "id": 0,
+                "title": "Mow",
+                "excerpt": ""
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.8" id="elementor-frontend-js"></script>
+    <script type="text/javascript" id="frel_init-js-extra">
+        /* <![CDATA[ */
+        var MowCoreAjaxObject = {
+            "ajax_url": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/mow\/news\/wp-admin\/admin-ajax.php",
+            "siteurl": "https:\/\/frenify.com\/work\/envato\/frenify\/wp\/mow\/news",
+            "nonce": "fce4d3a8c8"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="wp-content/plugins/mow-core/assets/js/init.js?ver=1.0.2.0" id="frel_init-js"></script>
+</body>
+
+</html>
