@@ -251,6 +251,13 @@ input[type="week"]:focus {
     scale: 1.2;
 }
 
+@media(min-width:1040px) {
+    .fn__logo img {
+        margin-bottom: 16px;
+    }
+}
+
+
 .fn__logo a {
     display: block
 }
